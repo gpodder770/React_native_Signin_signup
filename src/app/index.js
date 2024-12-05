@@ -18,7 +18,7 @@ export default function Index() {
     <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
       <View style={styles.container}>
         <View>
-          <Image style={styles.logo} source={require("../assets/noooby.png")} />
+          <Image style={styles.logo} source={require("../../assets/noooby.png")} />
         </View>
         {/* <Text style={styles.project_name}>ALMS</Text> */}
 

@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { StyleSheet, TextInput, View } from "react-native";
 import Ionicons from "@expo/vector-icons/Ionicons";
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+// import { MaterialCommunityIcons } from '@expo/vector-icons';
 // import { faEAngry } from 'free-regular-svg-icons';
 
 const InputFIeld = (props) => {
@@ -28,6 +28,7 @@ const InputFIeld = (props) => {
 
 const styles = StyleSheet.create({
   item: {
+    label: "Gourab",
     flexDirection: "row",
     paddingTop: 15,
     paddingLeft: 15,
