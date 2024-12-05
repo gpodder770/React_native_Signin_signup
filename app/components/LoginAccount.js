@@ -2,14 +2,14 @@ import { React } from "react";
 import { View, Text, Pressable, StyleSheet, Alert } from "react-native";
 import { Link } from "expo-router";
 
-const LoginAccount = (props)=>{
+const LoginAccount = (props) => {
   return (
     <View style={styles.div}>
       <Text>Already Have an Account?</Text>
       <Link href="/" asChild>
-      <Pressable style={styles.item}>
-        <Text style={styles.text}>{props.text}</Text>
-      </Pressable></Link>
+        <Pressable style={styles.item}>
+          <Text style={styles.text}>{props.text}</Text>
+        </Pressable></Link>
     </View>
   );
 };
@@ -17,7 +17,7 @@ const LoginAccount = (props)=>{
 const styles = StyleSheet.create({
   div: {
     position: "absolute",
-    bottom: 50,
+    bottom: '5%',
     flex: 1,
     flexDirection: "row",
     width: "100%",

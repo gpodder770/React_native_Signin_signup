@@ -63,5 +63,5 @@ const styles = StyleSheet.create({
   // },
   item_input: {
     //   marginTop: 150,
-  },
+  }
 });
