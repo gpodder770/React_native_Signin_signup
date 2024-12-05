@@ -62,6 +62,7 @@ const styles = StyleSheet.create({
   //   fontWeight:"800"
   // },
   item_input: {
+    width: 300
     //   marginTop: 150,
   }
 });
