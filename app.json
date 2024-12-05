@@ -2,6 +2,7 @@
   "expo": {
     "name": "Noooby_Signin_signup",
     "slug": "Noooby_Signin_signup",
+    "scheme": "Noooby_Signin_signup",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -24,6 +25,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }

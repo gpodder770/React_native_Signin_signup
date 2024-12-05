@@ -9,34 +9,35 @@ import {
 } from "react-native";
 
 import InputFIeld from "./components/InputFIeld";
+import PasswordInputFIeld from "./components/PasswordInputFIeld";
 import PageHeading from "./components/PageHeading";
 import SubmitButton from "./components/SubmitButton";
-import CreateAccount from "./components/CreateAccount";
+import LoginAccount from "./components/LoginAccount";
 
-export default function App() {
+export default function Index() {
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
       <View style={styles.container}>
-        <Image style={styles.logo} source={require("./assets/noooby.png")} />
+        {/* <Image style={styles.logo} source={require("../assets/noooby.png")} /> */}
         {/* <Text style={styles.project_name}>ALMS</Text> */}
 
         <View style={styles.item_input}>
-          <PageHeading text={"SIGN IN"} />
+          <PageHeading text={"Register"} />
           <Text style="styles.label" text=""></Text>
           <InputFIeld icon={"mail-outline"} placeholder={"Enter your Email"} />
-          <InputFIeld
+          <InputFIeld icon={"person-outline"} placeholder={"Enter your Name"} />
+          <PasswordInputFIeld
             icon={"lock-closed-outline"}
             placeholder={"Enter you Password"}
           />
-          {/* <InputFIeld
+          <PasswordInputFIeld
             icon={"lock-closed-outline"}
             placeholder={"Enter you Password Again"}
-          /> */}
-          <SubmitButton title={"Login"} />
+          />
+          <SubmitButton title={"Register"} />
         </View>
 
-        
-          <CreateAccount text="Click Here" />
+        <LoginAccount text="Click Here to login" />
       </View>
     </TouchableWithoutFeedback>
   );
@@ -50,17 +51,17 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     paddingHorizontal: 50,
   },
-  logo: {
-    width: 180,
-    height: 180,
-    position:'absolute',
-    top:150
-  },
+  // logo: {
+  //   width: 180,
+  //   height: 180,
+  //   position:'absolute',
+  //   top:150
+  // },
   // project_name:{
   //   fontSize: "36",
   //   fontWeight:"800"
   // },
   item_input: {
-    marginTop: 150,
+    //   marginTop: 150,
   },
 });

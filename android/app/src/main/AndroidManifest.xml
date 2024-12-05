@@ -24,6 +24,7 @@
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:scheme="Noooby_Signin_signup"/>
         <data android:scheme="com.anonymous.Noooby_Signin_signup"/>
       </intent-filter>
     </activity>
